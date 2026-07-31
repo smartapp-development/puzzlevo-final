@@ -1,0 +1,22 @@
+name: puzzlevo
+description: "Puzzlevo - 5 classic puzzle games in one app"
+publish_to: 'none'
+version: 2.0.6+25
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  unity_ads_plugin: ^0.4.0
+  google_fonts: ^6.3.3
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
