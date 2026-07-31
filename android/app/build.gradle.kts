@@ -15,10 +15,10 @@ android {
 
     signingConfigs {
         create("release") {
-            keyAlias = "puzzlevo"
-            keyPassword = "puzzlevo123"
+            keyAlias = System.getenv("KEY_ALIAS") ?: "puzzlevo"
+            keyPassword = System.getenv("KEY_PASSWORD") ?: "puzzlevo123"
             storeFile = file("keystore.jks")
-            storePassword = "puzzlevo123"
+            storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "puzzlevo123"
         }
     }
 
@@ -26,13 +26,15 @@ android {
         applicationId = "com.smartappdevelopment01.puzzlevo"
         minSdk = 24
         targetSdk = 36
-        versionCode = 25
-        versionName = "2.0.6"
+        versionCode = 27
+        versionName = "2.0.8"
     }
 
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("release")
+            minifyEnabled = false
+            shrinkResources = false
         }
     }
 }

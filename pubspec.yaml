@@ -1,7 +1,7 @@
 name: puzzlevo
 description: "Puzzlevo - 5 classic puzzle games in one app"
 publish_to: 'none'
-version: 2.0.6+25
+version: 2.0.8+27
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
